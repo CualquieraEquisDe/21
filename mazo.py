@@ -56,6 +56,9 @@ def jugar(jugador, computador, mazo):
             print("El jugador se planta con ", acumulado(jugador, len(jugador)))        
     else:
         print("El jugador se paso de 21")
+        print("El Pc ha ganado la partida")
+        input() 
+        sys.exit()
     time.sleep(2)    
     print("Turno del pc:")
     turnoPc(jugador, computador, mazo)
@@ -171,7 +174,8 @@ def ganador(jugador, computador):
             if acumulado(computador, len(computador)) <= 21:
                 print("El Pc ha ganado la partida con ", acumulado(computador, len(computador)))
             else:
-                print("Empate")                
+                print("Empate")
+input()                
 
 
 def empate(jugador,computador):
