@@ -175,7 +175,7 @@ def ganador(jugador, computador):
                 print("El Pc ha ganado la partida con ", acumulado(computador, len(computador)))
             else:
                 print("Empate")
-input()                
+    input()                
 
 
 def empate(jugador,computador):
